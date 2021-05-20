@@ -9,7 +9,7 @@ function App() {
 
   const fetchMovieData = (searchedValue, selectedTypeValue = null) => {
 
-    let URL = `http://www.omdbapi.com/?apikey=5ca71113&t=${searchedValue}&type=${selectedTypeValue}`
+    let URL = `https://www.omdbapi.com/?apikey=5ca71113&t=${searchedValue}&type=${selectedTypeValue}`
 
     fetch(URL)
     .then(response => response.json())
